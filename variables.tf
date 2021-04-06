@@ -9,7 +9,7 @@ variable "subnet_id" {
 }
 
 variable "instance_name" {
-  default = "basic"
+  default = "bastion"
 }
 
 variable "security_groups" {

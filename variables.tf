@@ -15,3 +15,8 @@ variable "instance_name" {
 variable "security_groups" {
   default = ["default"]
 }
+
+
+variable "user_data" {
+  default = ""
+}

@@ -19,6 +19,7 @@ resource "huaweicloud_compute_instance" "this" {
   security_groups   = [module.ssh.name]
   availability_zone = data.huaweicloud_availability_zones.myaz.names[0]
   key_pair          = huaweicloud_compute_keypair.this.name
+  user_data         = var.user_data
 
   network {
     uuid = var.subnet_id
